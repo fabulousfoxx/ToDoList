@@ -18,6 +18,15 @@ body{
   border-radius: 10px;
 }
 
+.heading{
+  position: absolute;
+  top: 15%;
+  margin-top: 10px;
+  text-align: center;
+  z-index: 2;
+}
+
+
 .input{
   width: 100%;
   box-sizing: border-box; /* input will have the same size az form */
@@ -75,5 +84,6 @@ input:placeholder{
 .list li.checked .fa-check{
   color: lightgray;
 }
+
 
 
