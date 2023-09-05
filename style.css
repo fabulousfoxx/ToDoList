@@ -1,0 +1,79 @@
+body{
+  margin: 0;
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Borel', cursive;
+  font-family: 'Pacifico', cursive;
+  background: radial-gradient(at 50% 50%, orange, orange, rgb(167, 44, 167));
+}
+
+.form{
+  position: absolute;
+  top: 30%;
+  box-shadow: 0 4px 8px rgba(0,0,0,.3);
+  width: 400px;
+  background-color: rgba(128, 75, 6, 0.3);
+  border-radius: 10px;
+}
+
+.input{
+  width: 100%;
+  box-sizing: border-box; /* input will have the same size az form */
+  padding: 20px;
+  border-radius: 10px 10px 0 0; /* top bottom left right */
+  font-size: 20px;
+  font-family: cursive; 
+}
+
+input:placeholder{
+  color: gray;
+}
+
+.list{
+  padding: 0;
+  margin: 0;
+}
+
+.list li{
+  list-style-type: none;
+  padding: 20px;
+  border-top: dotted;
+  color: rgb(99, 4, 99);
+  border-color: purple;
+  /* rgb(34, 85, 85); */
+  position: relative; 
+  /* to make position of child icon as absolute */
+}
+
+.list li .fa-trash{
+  color: red;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  /* two lines above to center icon vertically */
+  cursor: pointer;
+}
+
+.list li .fa-check{
+  color: green;
+  position: absolute;
+  right: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  /* two lines above to center icon vertically */
+  cursor: pointer;
+}
+
+.list li.checked {
+  color: lightgray;
+  text-decoration: line-through;
+}
+
+.list li.checked .fa-check{
+  color: lightgray;
+}
+
+
